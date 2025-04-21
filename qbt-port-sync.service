@@ -1,0 +1,13 @@
+[Unit]
+Description=Sync qBittorrent port with ProtonVPN NAT-PMP
+After=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/path/to/file/qbt-sync-port-ProntonVPN/qbt-port-sync.sh
+WorkingDirectory=/path/to/folder/qbt-sync-port-ProntonVPN
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
