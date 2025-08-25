@@ -9,7 +9,7 @@ if [[ "$PORT" == "fail" ]]; then
     JSON_PAYLOAD=$(printf '{"content":"","embeds":[{"title":"Port qBittorrent update","description":"❌ Qbittorrent port update failed","color":%d,"timestamp":"%s"}]}' "$COLOR" "$TIMESTAMP")
 else
     COLOR=3066993
-    JSON_PAYLOAD=$(printf '{"content":"","embeds":[{"title":"Port qBittorrent update":"✅ qBittorrent port successfully updated.\\n🔌 New port : %s","color":%d,"timestamp":"%s"}]}' "$PORT" "$COLOR" "$TIMESTAMP")
+    JSON_PAYLOAD=$(printf '{"content":"","embeds":[{"title":"Port qBittorrent update","description":"✅ qBittorrent port successfully updated.\\n🔌 New port : %s","color":%d,"timestamp":"%s"}]}' "$PORT" "$COLOR" "$TIMESTAMP")
 
 fi
 
