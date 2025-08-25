@@ -28,25 +28,6 @@ QBIT_PASS="MyPassword"
 WEBHOOK_URL="https://discord.com/api/webhooks/[...]"
 ```
 
-## Usage
-
-1. Make both scripts executable:
-
-```bash
-chmod +x qbt-port-sync.sh notif-discord.sh
-```
-
-2. (Optional) Uncomment the line in `qbt-port-sync.sh` to enable Discord notifications:
-
-```bash
-# ./notif-discord.sh "$mapped_port"
-```
-
-3. Run `qbt-port-sync.sh` in the background or as a service:
-
-```bash
-./qbt-port-sync.sh &
-```
 
 ## Usage
 
